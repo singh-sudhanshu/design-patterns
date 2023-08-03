@@ -19,6 +19,6 @@ public class MallWithoutParkingBuilder extends ShoppingMallBuilder {
 
     @Override
     protected void buildParking() {
-        throw new UnsupportedOperationException("Parking is not available");
+        this.getParts().put("parking", "parking not available");
     }
 }
