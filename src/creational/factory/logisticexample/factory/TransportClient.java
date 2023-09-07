@@ -17,10 +17,18 @@ public class TransportClient {
 
     private static void getDelivery(String mode) {
         switch (mode.toLowerCase()) {
-            case "air" -> deliveryFactory = new DeliverByAir();
-            case "sea" -> deliveryFactory = new DeliveryFactoryBySea();
-            case "road" -> deliveryFactory = new DeliveryFactoryByRoad();
-            default -> System.out.println("Delivery mode not available");
+            case "air":
+                deliveryFactory = new DeliverByAir();
+                break;
+            case "sea":
+                deliveryFactory = new DeliveryFactoryBySea();
+                break;
+            case "road":
+                deliveryFactory = new DeliveryFactoryByRoad();
+                break;
+            default:
+                System.out.println("Delivery mode not available");
+                break;
         }
     }
 }

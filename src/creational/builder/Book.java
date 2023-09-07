@@ -2,7 +2,7 @@ package creational.builder;
 
 import java.time.Year;
 
-public class Book {
+class Book {
 
     private final String id;
     private final String title;
